@@ -137,14 +137,14 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/4d5d488f2d6265fda7c9edcb8e15b55c.loader.js'
+            unityLoader.src = 'Build/47d0889dc68fecff92d48cbce41878e5.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/c5df7e57f28582e282eb2dbf57987998.data.unityweb',
-                        frameworkUrl: 'Build/7732c22cbd5c0dce9cffd6423b61d474.framework.js.unityweb',
-                        codeUrl: 'Build/bc4dcbfd581d4887eb0e5ea3bed336f3.wasm.unityweb',
+                        dataUrl: 'Build/818e198b633a9efae2cbfd62e78fe90f.data.unityweb',
+                        frameworkUrl: 'Build/69e59f230ad9ce3b0a91ae444589d6a4.framework.js.unityweb',
+                        codeUrl: 'Build/93e44fcc8f7b570cfbf126af714973cc.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'DefaultCompany',
                         productName: 'Battle City',
