@@ -138,17 +138,17 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/WebGL.loader.js'
+            unityLoader.src = 'Build/TEST.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/WebGL.data.unityweb',
-                        frameworkUrl: 'Build/WebGL.framework.js.unityweb',
-                        codeUrl: 'Build/WebGL.wasm.unityweb',
+                        dataUrl: 'Build/TEST.data.br',
+                        frameworkUrl: 'Build/TEST.framework.js.br',
+                        codeUrl: 'Build/TEST.wasm.br',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'DefaultCompany',
-                        productName: 'Battle City',
+                        productName: 'My project',
                         productVersion: '1.0',
                         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
