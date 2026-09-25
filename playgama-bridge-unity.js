@@ -137,14 +137,14 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/32674bd6fb51f013f74c1fadf7eaf82c.loader.js'
+            unityLoader.src = 'Build/7d8f11a34cda45b2aee2dd7b13fec6ce.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/9750fa71e84ea7e10e9cfed6a998912c.data.unityweb',
-                        frameworkUrl: 'Build/53b9c7449e0ff36246158d42d9989259.framework.js.unityweb',
-                        codeUrl: 'Build/8397b4d8de32ea371e82c6625770d7f4.wasm.unityweb',
+                        dataUrl: 'Build/5fd878441b96beabfe6d5a23691e29bf.data.unityweb',
+                        frameworkUrl: 'Build/fe1850fde3e371532054fd15ea8cde1b.framework.js.unityweb',
+                        codeUrl: 'Build/535b25dab9f9ad4cae7b6f7a3ab1c8bf.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'Playgama',
                         productName: 'Bridge Examples',
