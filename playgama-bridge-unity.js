@@ -142,9 +142,9 @@ function initializeBridge() {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/a3eea42055fae23de6645cddc5d55bc3.data.unityweb',
+                        dataUrl: 'Build/560a4ec2d149bda998d14af91cc7bd80.data.unityweb',
                         frameworkUrl: 'Build/2be924313fd1160db965236feee5f0bc.framework.js.unityweb',
-                        codeUrl: 'Build/7fb853e9e7828233e5bff59d62a35691.wasm.unityweb',
+                        codeUrl: 'Build/405b80cbaa2f5ce684e66d06a558bd01.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'DefaultCompany',
                         productName: 'Battle City',
